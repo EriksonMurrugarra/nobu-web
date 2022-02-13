@@ -27,7 +27,7 @@ export default function LandingPage() {
           <Container mt={10} color={"whitesmoke"}>
             <Heading fontSize={"md"}>Cualquiera puede escribir codigo que un computador puede entender... <br/>
               Solo los grandes escriben codigo que los humanos pueden entender.</Heading>
-            <Text mt={6} fontSize={"sm"} color={"gray.100"}> - Marting Fowler - </Text>
+            <Text mt={6} fontSize={"sm"} color={"gray.100"}> - Martin Fowler - </Text>
           </Container>
         </Container>
       </Box>
@@ -41,7 +41,7 @@ export default function LandingPage() {
         <Divider mt={4}/>
         <SimpleGrid columns={[1, 2, null, 4]} mt={10} gap={10} w={"full"}>
           <VStack>
-            <Heading fontSize={"sm"} color={"#074061"}>1. Fundamentals</Heading>
+            <Heading fontSize={"sm"} color={"#074061"}>Fundamentals</Heading>
             <UnorderedList>
               <ListItem fontSize={"sm"}>Principles (SOLID + YAGNI)</ListItem>
               <ListItem fontSize={"sm"}>Object Oriented Programming</ListItem>
@@ -51,7 +51,7 @@ export default function LandingPage() {
             </UnorderedList>
           </VStack>
           <VStack>
-            <Heading fontSize={"sm"} color={"#074061"}>2. Testing</Heading>
+            <Heading fontSize={"sm"} color={"#074061"}>Testing</Heading>
             <UnorderedList>
               <ListItem fontSize={"sm"}>Testing Principles</ListItem>
               <ListItem fontSize={"sm"}>Testing Design</ListItem>
@@ -61,7 +61,7 @@ export default function LandingPage() {
             </UnorderedList>
           </VStack>
           <VStack>
-            <Heading fontSize={"sm"} color={"#074061"}>3. Domain Driven Engineering</Heading>
+            <Heading fontSize={"sm"} color={"#074061"}>Domain Driven Engineering</Heading>
             <UnorderedList>
               <ListItem fontSize={"sm"}>Domain Driven Design</ListItem>
               <ListItem fontSize={"sm"}>Hexagonal Architecture</ListItem>
@@ -71,7 +71,7 @@ export default function LandingPage() {
             </UnorderedList>
           </VStack>
           <VStack>
-            <Heading fontSize={"sm"} color={"#074061"}>4. Distributed Systems</Heading>
+            <Heading fontSize={"sm"} color={"#074061"}>Distributed Systems</Heading>
             <UnorderedList>
               <ListItem fontSize={"sm"}>Microservices</ListItem>
               <ListItem fontSize={"sm"}>Enterprise Integration Patterns</ListItem>
@@ -121,8 +121,7 @@ export default function LandingPage() {
       {/*End FAQ*/}
       {/*Footer*/}
       <Center mt={6}>
-        <Text fontSize={"sm"} color={"gray"}>Ⓒ Nobu 2022</Text>
-        <Text fontSize={"sm"} color={"gray.50"}>Peru | Paises Bajos</Text>
+        <Text fontSize={"sm"} color={"gray"}>Ⓒ Nobu 2022. PE / NL</Text>
       </Center>
       {/*End Footer*/}
     </>
