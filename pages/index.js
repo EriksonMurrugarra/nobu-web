@@ -25,7 +25,7 @@ export default function LandingPage() {
         <Container maxWidth={"container.lg"}>
           <Heading fontSize={"2xl"} color={"white"}>Nobu</Heading>
           <Container mt={10} color={"whitesmoke"}>
-            <Heading fontSize={"md"}>Cualquiera puede escribir codigo que un computador puede entender.
+            <Heading fontSize={"md"}>Cualquiera puede escribir codigo que un computador puede entender... <br/>
               Solo los grandes escriben codigo que los humanos pueden entender.</Heading>
             <Text mt={6} fontSize={"sm"} color={"gray.100"}> - Marting Fowler - </Text>
           </Container>
