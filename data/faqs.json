@@ -1,0 +1,10 @@
+[
+  { "number": "1", "question": "La perfeccion es ideal?", "answer": "La perfeccion no es el objetivo de Nobu. Buscamos crear cosas que funcionen bien, no que sean perfectas." },
+  { "number": "3", "question": "Que importancia tiene usar Patrones?", "answer": "Es el lenguaje comun que utilizan los expertos para lograr mayor productividad y hacer uso de soluciones probadas a problemas recurrentes." },
+  { "number": "4", "question": "Que importancia tiene los principios ?", "answer": "Son la base de todo, una casa con malas bases esta condenada a desplomarse." },
+  { "number": "5", "question": "Skills de un buen desarrollador?", "answer": "Utiliza principios, abraza la abstraccion y no se casa con las tecnologias de moda." },
+  { "number": "6", "question": "Puntos debiles en los arquitectos de software", "answer": "No tienen bases muy solidas y por eso disenan arquitecturas dificiles de mantener y costosas."},
+  { "number": "7", "question": "Que son los antipatrones ?", "answer": "Los patrones de hoy, son los antipatrones del manana. Por eso es importante actualizarse constantemente y buscar formas de mejora." },
+  { "number": "8", "question": "Que desventajas a largo plazo se tendra con un proyecto de mala calidad ?", "answer": "Alto costo de mantenimiento y dificultad para agregar cambio lo cual perjudica a la empresa porque retrasa su time to market." },
+  { "number": "9", "question": "Que puedo mejorar mis skills ?", "answer": "Replantear nuestras bases y mantenerse actualizado. Siendo alumno de Nobu." }
+]

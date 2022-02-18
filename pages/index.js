@@ -13,8 +13,10 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head"
 import styles from "../styles/landing.module.css"
+import fs from "fs/promises"
+import path from "path"
 
-export default function LandingPage() {
+export default function LandingPage({faq}) {
   return (
     <>
       <Head>
@@ -92,29 +94,20 @@ export default function LandingPage() {
         </VStack>
         <Container maxWidth={"container.md"} mt={6}>
           <Accordion>
-            <AccordionItem>
-              <AccordionButton>
-                <Box flex='1' textAlign='left'>
-                  <Heading fontSize={"md"}>Pregunta 1?</Heading>
-                </Box>
-                <AccordionIcon/>
-              </AccordionButton>
-              <AccordionPanel pb={4}>
-                <Text fontSize={"md"}>Respuesta 1</Text>
-              </AccordionPanel>
-            </AccordionItem>
+            {
+              faq.map(question =>  <AccordionItem key={question.id}>
+                <AccordionButton>
+                  <Box flex='1' textAlign='left'>
+                    <Heading fontSize={"md"}>{question.question}</Heading>
+                  </Box>
+                  <AccordionIcon/>
+                </AccordionButton>
+                <AccordionPanel pb={4}>
+                  <Text fontSize={"md"}>{question.answer}</Text>
+                </AccordionPanel>
+              </AccordionItem>)
+            }
 
-            <AccordionItem>
-              <AccordionButton>
-                <Box flex='1' textAlign='left'>
-                  <Heading fontSize={"md"}>Pregunta 2?</Heading>
-                </Box>
-                <AccordionIcon/>
-              </AccordionButton>
-              <AccordionPanel pb={4}>
-                Respuesta 2
-              </AccordionPanel>
-            </AccordionItem>
           </Accordion>
         </Container>
       </Box>
@@ -126,4 +119,16 @@ export default function LandingPage() {
       {/*End Footer*/}
     </>
   )
+}
+
+export async function getStaticProps(context) {
+  const filePath = path.join(process.cwd(), "data", "faqs.json")
+  const jsonData = await fs.readFile(filePath)
+  const data = JSON.parse(jsonData)
+
+  return {
+    props: {
+      faq: data
+    }
+  }
 }
